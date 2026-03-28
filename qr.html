@@ -1,11 +1,50 @@
-
 <!DOCTYPE html>
 <html>
-<body style="text-align:center;">
+<head>
+  <title>Scan & Pay</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: #f5f5f5;
+    }
 
-<h2>Scan QR & Pay</h2>
+    .box {
+      margin-top: 50px;
+    }
 
-<img src="IMG-20260327-WA0001.jpg" width="250">
+    img {
+      border: 2px solid black;
+      border-radius: 10px;
+    }
 
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h2>📱 Scan QR & Pay</h2>
+
+    <img src="IMG-20260327-WA0001.jpg" width="250">
+
+    <br>
+    <button onclick="goBack()">⬅ Back</button>
+  </div>
+
+  <script>
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
 </body>
 </html>
