@@ -1,21 +1,46 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Good Luck</title>
-</head>
-<body style="text-align:center; font-family:Arial;">
+  <title>Good Luck</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: #f5f5f5;
+    }
 
-    <h1>₹10 Good Luck 🍀</h1>
-    <p>Pay ₹10 and get Good Luck</p>
+    .box {
+      margin-top: 100px;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: darkgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>💰 10 Rs Good Luck</h1>
+    <p>Pay ₹10 and get Good Luck ✨</p>
 
     <button onclick="goToQR()">Pay Now</button>
+  </div>
 
-    <script>
-        function goToQR() {
-            window.location.href = "qr.html";
-        }
-    </script>
-
+  <script>
+    function goToQR() {
+      window.location.href = "qr.html";
+    }
+  </script>
 </body>
 </html>
